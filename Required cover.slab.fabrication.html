@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: green;
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .button-container button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .table-container {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 1px solid green;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: green;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #d4edda;
+        }
+        tr:nth-child(odd) {
+            background-color: #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Project Details</h1>
+    <div class="button-container">
+        <button onclick="window.print()">Print</button>
+        <button onclick="copyTable()">Copy</button>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Location</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <tr><td>1</td><td>75+600</td><td>Leakage</td></tr>
+                <tr><td>2</td><td>wo 92. 68+578.87</td><td>Required cover slab fabrication</td></tr>
+                <tr><td>3</td><td>69+297</td><td>Required cover slab fabrication</td></tr>
+                <tr><td>4</td><td>79+312</td><td>Required cover slab fabrication</td></tr>
+                <tr><td>5</td><td>80+175</td><td>Required cover slab fabrication</td></tr>
+                <tr><td>6</td><td>80+726</td><td>Required cover slab fabrication</td></tr>
+                <tr><td>7</td><td>2 shafts (tunnel no 3 exit)</td><td>Required cover slab fabrication</td></tr>
+                <tr><td>8</td><td>68+736</td><td>Stolen cover slab</td></tr>
+                <tr><td>9</td><td>69+488</td><td>Stolen cover slab</td></tr>
+                <tr><td>10</td><td>69+938</td><td>Stolen cover slab</td></tr>
+                <tr><td>11</td><td>79+312</td><td>Stolen cover slab</td></tr>
+                <tr><td>12</td><td>69+681</td><td>Screed free land quality problem</td></tr>
+                <tr><td>13</td><td>71+021 vs</td><td>Screed free land quality problem</td></tr>
+                <tr><td>14</td><td>72+809 vs</td><td>Screed free land quality problem</td></tr>
+                <tr><td>15</td><td>73+640 vent</td><td>Screed free land quality problem</td></tr>
+                <tr><td>16</td><td>74+536</td><td>Screed free land quality problem</td></tr>
+                <tr><td>17</td><td>69+938 drain</td><td>Required free land screed</td></tr>
+                <tr><td>18</td><td>68+020.74</td><td>Required free land screed</td></tr>
+                <tr><td>19</td><td>78+580</td><td>Required free land screed</td></tr>
+                <tr><td>20</td><td>78+966</td><td>Required free land screed</td></tr>
+                <tr><td>21</td><td>79+312</td><td>Required free land screed</td></tr>
+                <tr><td>22</td><td>79+585 vs</td><td>Required free land screed</td></tr>
+                <tr><td>23</td><td>79+852</td><td>Required free land screed</td></tr>
+                <tr><td>24</td><td>80+000 vent</td><td>Required free land screed</td></tr>
+                <tr><td>25</td><td>80+282 vent</td><td>Required free land screed</td></tr>
+                <tr><td>26</td><td>80+726</td><td>Required free land screed</td></tr>
+                <tr><td>27</td><td>81+280</td><td>Required free land screed</td></tr>
+                <tr><td>28</td><td>82+762</td><td>Required free land screed</td></tr>
+                <tr><td>29</td><td>82+937</td><td>Required free land screed</td></tr>
+                <tr><td>30</td><td>82+932 dn</td><td>Required free land screed</td></tr>
+                <tr><td>31</td><td>88+333</td><td>Required free land screed</td></tr>
+                <tr><td>32</td><td>88+994</td><td>Required free land screed</td></tr>
+                <tr><td>33</td><td>90+019</td><td>Required free land screed</td></tr>
+                <tr><td>34</td><td>91+728</td><td>Required free land screed</td></tr>
+                <tr><td>35</td><td>92+099</td><td>Required free land screed</td></tr>
+                <tr><td>36</td><td>92+269</td><td>Required free land screed</td></tr>
+                <tr><td>37</td><td>92+418 vs</td><td>Required free land screed</td></tr>
+                <tr><td>38</td><td>92+686</td><td>Required free land screed</td></tr>
+                <tr><td>39</td><td>92+837</td><td>Required free land screed</td></tr>
+                <tr><td>40</td><td>93+733</td><td>Required free land screed</td></tr>
+                <tr><td>41</td><td>94+256</td><td>Required free land screed</td></tr>
+                <tr><td>42</td><td>94+795</td><td>Required free land screed</td></tr>
+                <tr><td>43</td><td>65+509</td><td>Required free land screed</td></tr>
+                <tr><td>44</td><td>60+918</td><td>Required free land screed</td></tr>
+                <tr><td>45</td><td>73+640</td><td>Access problem: need shovel and photo</td></tr>
+                <tr><td>46</td><td>74+897 ds</td><td>Big problem needs everything: cover installation - vent fence - screed</td></tr>
+                <tr><td>47</td><td>77+497</td><td>There is a cover slab - needs to install</td></tr>
+                <tr><td>48</td><td>78+966</td><td>There is a cover slab - needs to install</td></tr>
+                <tr><td>49</td><td>78+051.88 vs</td><td>Need to install the external ladder</td></tr>
+                <tr><td>50</td><td>79+300</td><td>Need fence installation: 5 columns at site, need net material</td></tr>
+                <tr><td>51</td><td>81+280</td><td>Need fence installation: 9 columns at site, need net</td></tr>
+                <tr><td>52</td><td>82+937</td><td>Need fence installation: repair</td></tr>
+                    <tr><td>53</td><td>84+715</td><td>Need fence installation</td></tr>
+            <tr><td>54</td><td>82+762</td><td>Broken stainless steel vent</td></tr>
+            <tr><td>55</td><td>62+378</td><td>Stolen door</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    function copyTable() {
+        const range = document.createRange();
+        range.selectNode(document.getElementById('table-body'));
+        window.getSelection().removeAllRanges(); 
+        window.getSelection().addRange(range); 
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert('Table copied to clipboard');
+    }
+</script>
+
+</body>
+</html>
